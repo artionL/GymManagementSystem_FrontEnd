@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Welcome Page</title>
+    <title>Update Discount</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to FitLife Gym</h1>
+        <h1>Update Discount</h1>
     </header>
     <nav>
         <ul>
@@ -35,9 +35,9 @@
             </li>
             <li>
                 <div class="dropdown">
-                    <a class="dropbtn" href="../MemberSubscriptions/memberSubscriptions.html">Subscribers</a>
+                    <a class="dropbtn" href="../MemberSubscriptions/memberSubscriptions.html">Subscriberss</a>
                     <div class="dropdown-content">
-                        <a href="../MemberSubscriptions/memberSubscriptions.html">View Subscribers</a>
+                        <a href="../MemberSubscriptions/memberSubscriptions.html">View Subscriberss</a>
                         <a href="../MemberSubscriptions/register_memberSubsciptions.html">Register Subscriber</a>
                     </div>
                 </div>
@@ -53,18 +53,29 @@
             </li>
         </ul>
     </nav>
-    <div class="container">
-        <div class="welcome-text">
-            <h1>Transform Your Body, Transform Your Life</h1>
-            <p>Join our state-of-the-art gym and start your fitness journey today. Our expert trainers and top-notch facilities are here to help you achieve your goals.</p>
-            <a href="../Members/register_member.html" class="cta-button">Join Now</a>
+    <div class="container" id="output">
+        <div class="message">
+            <h1>Update Discount</h1>
         </div>
-        <div class="gym-images">
-            <img src="../HomePage/Pictures/Pic1.jpg" alt="Gym Image 1">
-            <img src="../HomePage/Pictures/Pic2.jpg" alt="Gym Image 2">
-            <img src="../HomePage/Pictures/Pic3.jpg" alt="Gym Image 3">
-        </div>
+        <form id="updateDiscountsForm">
+            <input type="hidden" id="idUpdate" />
+            <label for="codeUpdate">Code:</label>
+            <input type="text" id="codeUpdate" disabled/><br/>
+    
+            <label for="valueUpdate">Value:</label>
+            <input type="number" id="valueUpdate" /><br/>
+    
+            <label for="startDateUpdate">Start Date:</label>
+            <input type="date" id="startDateUpdate"/><br/>
+    
+            <label for="endDateUpdate">End Date:</label>
+            <input type="date" id="endDateUpdate" /><br/>
+    
+            <button type="submit">Update Discount</button>
+        </form>
+
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="discounts.js"></script>
 </body>
 </html>

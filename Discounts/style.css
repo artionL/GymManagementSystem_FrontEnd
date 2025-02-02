@@ -53,15 +53,15 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.welcome-text {
+.message {
     text-align: center;
     margin-top: 20px;
 }
-.welcome-text h1 {
+.message h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
-.welcome-text p {
+.message p {
     font-size: 1.2em;
     color: #555;
 }
@@ -117,17 +117,4 @@ nav ul li a:hover {
   .dropdown:hover .dropbtn {
     background-color: #555;
     color: #ffcc00;
-}
-
-.message {
-    text-align: center;
-    margin-top: 20px;
-}
-.message h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-.message p {
-    font-size: 1.2em;
-    color: #555;
 }

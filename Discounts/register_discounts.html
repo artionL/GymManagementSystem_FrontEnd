@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Welcome Page</title>
+    <title>Register Discount</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to FitLife Gym</h1>
+        <h1>Register Discount</h1>
     </header>
     <nav>
         <ul>
@@ -38,7 +38,7 @@
                     <a class="dropbtn" href="../MemberSubscriptions/memberSubscriptions.html">Subscribers</a>
                     <div class="dropdown-content">
                         <a href="../MemberSubscriptions/memberSubscriptions.html">View Subscribers</a>
-                        <a href="../MemberSubscriptions/register_memberSubsciptions.html">Register Subscriber</a>
+                        <a href="../MemberSubscriptions/register_memberSubsciptions.html">Register Subscribers</a>
                     </div>
                 </div>
             </li>
@@ -53,18 +53,28 @@
             </li>
         </ul>
     </nav>
-    <div class="container">
-        <div class="welcome-text">
-            <h1>Transform Your Body, Transform Your Life</h1>
-            <p>Join our state-of-the-art gym and start your fitness journey today. Our expert trainers and top-notch facilities are here to help you achieve your goals.</p>
-            <a href="../Members/register_member.html" class="cta-button">Join Now</a>
+    <div class="container" id="output">
+        <div class="message">
+            <h1>Register new Discount</h1>
         </div>
-        <div class="gym-images">
-            <img src="../HomePage/Pictures/Pic1.jpg" alt="Gym Image 1">
-            <img src="../HomePage/Pictures/Pic2.jpg" alt="Gym Image 2">
-            <img src="../HomePage/Pictures/Pic3.jpg" alt="Gym Image 3">
-        </div>
+        <form id="addDiscountsForm">
+            <label for="codeAdd">Code:</label>
+            <input type="text" id="codeAdd" /><br/>
+    
+            <label for="valueAdd">Value:</label>
+            <input type="number" id="valueAdd" /><br/>
+    
+            <label for="startDateAdd">Start Date:</label>
+            <input type="date" id="startDateAdd"/><br/>
+    
+            <label for="endDateAdd">End Date:</label>
+            <input type="date" id="endDateAdd" /><br/>
+    
+            <button type="submit">Register Discount</button>
+        </form>
+
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="discounts.js"></script>
 </body>
 </html>

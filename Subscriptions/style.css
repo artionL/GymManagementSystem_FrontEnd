@@ -118,3 +118,16 @@ nav ul li a:hover {
     background-color: #555;
     color: #ffcc00;
 }
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+}
+.message h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.message p {
+    font-size: 1.2em;
+    color: #555;
+}
