@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Update Subscription</title>
+</head>
+<body>
+    <header>
+        <h1>Update Subscription</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a class="dropbtn" href="../HomePage/index.html">Home</a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../Members/members.html">Members</a>
+                    <div class="dropdown-content">
+                        <a href="../Members/members.html">View Members</a>
+                        <a href="../Members/register_member.html">Register Member</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../Subscriptions/subscriptions.html">Subscriptions</a>
+                    <div class="dropdown-content">
+                        <a href="../Subscriptions/subscriptions.html">View Subscriptions</a>
+                        <a href="../Subscriptions/register_subscriptions.html">Register Subscription</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../MemberSubscriptions/memberSubscriptions.html">Subscribers</a>
+                    <div class="dropdown-content">
+                        <a href="../MemberSubscriptions/memberSubscriptions.html">View Subscribers</a>
+                        <a href="../MemberSubscriptions/register_memberSubsciptions.html">Register Subscribers</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container" id="output">
+            <form id="updateSubscriptionForm">
+                <input type="hidden" id="idUpdate" /> <!-- This will hold the subscriptions ID -->
+                <label for="code">Code:</label><br>
+                <input type="text" id="codeUpdate" name="code" disabled><br>
+                <label for="description">Description:</label><br>
+                <input type="text" id="descriptionUpdate" name="description"><br>
+                <label for="weekFrequency">Week Frequency:</label><br>
+                <input type="number" id="weekFrequencyUpdate" name="weekFrequency"><br>
+                <label for="numberOfMonths">Number of months:</label><br>
+                <input type="number" id="numberOfMonthsUpdate" name="numberOfMonths"><br>
+                <label for="totalNumSessionsUpdate">Total Number of Sessions:</label><br>
+                <input type="number" id="totalNumSessionsUpdate" name="totalNumberOfSessions"><br>
+                <label for="totalPrice">Total Price:</label><br>
+                <input type="number" id="totalPriceUpdate" name="totalPrice"><br>
+                <!-- <label for="isDeleted">Is Deleted?:</label><br>
+                <input type="radio" id="isDeletedUpdate" name="isDeleted"><br> -->
+                <button type="submit">Update Subscriptions</button>
+            </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="subscriptions.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Update Member</title>
+</head>
+<body>
+    <header>
+        <h1>Update Member</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a class="dropbtn" href="../HomePage/index.html">Home</a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../Members/members.html">Members</a>
+                    <div class="dropdown-content">
+                        <a href="../Members/members.html">View Members</a>
+                        <a href="../Members/register_member.html">Register Member</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../Subscriptions/subscriptions.html">Subscriptions</a>
+                    <div class="dropdown-content">
+                        <a href="../Subscriptions/subscriptions.html">View Subscriptions</a>
+                        <a href="../Subscriptions/register_subscriptions.html">Register Subscription</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../MemberSubscriptions/memberSubscriptions.html">Subscribers</a>
+                    <div class="dropdown-content">
+                        <a href="../MemberSubscriptions/memberSubscriptions.html">View Subscribers</a>
+                        <a href="../MemberSubscriptions/register_memberSubsciptions.html">Register Subscriber</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container" id="output">
+        <form id="updateMemberForm">
+            <input type="hidden" id="idUpdate" /> <!-- This will hold the member ID -->
+            <label for="firstNameUpdate">First Name:</label>
+            <input type="text" id="firstNameUpdate" /><br/>
+    
+            <label for="lastNameUpdate">Last Name:</label>
+            <input type="text" id="lastNameUpdate" /><br/>
+    
+            <label for="idCardNumberUpdate">ID Card Number:</label>
+            <input type="text" id="idCardNumberUpdate" disabled/><br/>
+    
+            <label for="emailUpdate">Email:</label>
+            <input type="email" id="emailUpdate" /><br/>
+    
+            <label for="registrationDateUpdate">Registration Date:</label>
+            <input type="date" id="registrationDateUpdate" /><br/>
+    
+            <label for="birthdayUpdate">Birthday:</label>
+            <input type="date" id="birthdayUpdate" /><br/>
+    
+            <button type="submit">Update Member</button>
+        </form>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="members.js"></script>
+</body>
+</html>

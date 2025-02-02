@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Subscribers</title>
+</head>
+<body>
+    <header>
+        <h1>Gym Subscribers</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a class="dropbtn" href="../HomePage/index.html">Home</a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../Members/members.html">Members</a>
+                    <div class="dropdown-content">
+                        <a href="../Members/members.html">View Members</a>
+                        <a href="../Members/register_member.html">Register Member</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../Subscriptions/subscriptions.html">Subscriptions</a>
+                    <div class="dropdown-content">
+                        <a href="../Subscriptions/subscriptions.html">View Subscriptions</a>
+                        <a href="../Subscriptions/register_subscriptions.html">Register Subscription</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../MemberSubscriptions/memberSubscriptions.html">Subscribers</a>
+                    <div class="dropdown-content">
+                        <a href="../MemberSubscriptions/memberSubscriptions.html">View Subscribers</a>
+                        <a href="../MemberSubscriptions/register_memberSubsciptions.html" id="registerSubscriberLink">Register Subscribers</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container" id="container">
+        <div class="message" id="message">
+            <h1>Subscribers List</h1>
+        </div>
+        <div class="header" id="header">
+        <input type="search" id="input-filter" placeholder="Search Data....">
+        <button id="getSubscribersBtn">Load Data</button>
+        </div>
+        <div class="table" id="output">
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="memberSubsciptions.js"></script>
+</body>
+</html>

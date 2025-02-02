@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register Subscriber</title>
+</head>
+<body>
+    <header>
+        <h1>Gym Subscribers</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a class="dropbtn" href="../HomePage/index.html">Home</a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../Members/members.html">Members</a>
+                    <div class="dropdown-content">
+                        <a href="../Members/members.html">View Members</a>
+                        <a href="../Members/register_member.html">Register Member</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../Subscriptions/subscriptions.html">Subscriptions</a>
+                    <div class="dropdown-content">
+                        <a href="../Subscriptions/subscriptions.html">View Subscriptions</a>
+                        <a href="../Subscriptions/register_subscriptions.html">Register Subscription</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../MemberSubscriptions/memberSubscriptions.html">Subscribers</a>
+                    <div class="dropdown-content">
+                        <a href="../MemberSubscriptions/memberSubscriptions.html">View Subscribers</a>
+                        <a href="../MemberSubscriptions/register_memberSubsciptions.html" id="registerSubscriberLink">Register Subscriber</a>
+                        
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container" id="output">
+        <div class="welcome-text">
+            <h1>Register new subscriber</h1>
+        </div>
+        <form id="addSubscriberForm">
+            <label for="membersIdCardAdd">Member's ID Card:</label>
+            <select name="membersIdCardAdd" id="membersIdCardAdd"></select><br/>
+
+            <label for="subscriptionsCodeAdd">Subscription's Code:</label>
+            <select name="subscriptionsCodeAdd" id="subscriptionsCodeAdd"></select><br/>
+
+            <label for="originalPriceAdd">Original Price:</label>
+            <input type="number" id="originalPriceAdd"><br/>
+
+            <label for="discountValueAdd">Discount Value:</label>
+            <select name="discountValueAdd" id="discountValueAdd"></select><br/>
+
+            <label for="paidPriceAdd">Paid price:</label>
+            <input type="text" id="paidPriceAdd"><br/>
+    
+            <label for="startDateAdd">Start Date:</label>
+            <input type="date" id="startDateAdd"><br/>
+    
+            <label for="endDateAdd">End Date:</label>
+            <input type="date" id="endDateAdd"><br/>
+    
+            <label for="remainingSessionsAdd">Remaining Sessions:</label>
+            <input type="number" id="remainingSessionsAdd" /><br/>
+    
+            <button type="submit">Register Subscriber</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="memberSubsciptions.js"></script>
+</body>
+</html>
